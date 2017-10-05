@@ -35,7 +35,10 @@ namespace MultiselectControlDemo.Controllers
         new Employee() {FirstName = "George", LastName = "Washington", Title = "President"},
         new Employee() {FirstName = "Thomas", LastName = "Jefferson", Title = "CEO"},
         new Employee() {FirstName = "Abraham", LastName = "Lincoln", Title = "General Counsel"},
-        new Employee() {FirstName = "Franklin", LastName = "Roosevelt", Title = "Chairman"}
+        new Employee() {FirstName = "Franklin", LastName = "Roosevelt", Title = "Chairman"},
+        new Employee() {FirstName = "John", LastName = "Kennedy", Title = "COO"},
+        new Employee() {FirstName = "Richard", LastName = "Nixon", Title = "Chief Strategist"},
+        new Employee() {FirstName = "James", LastName = "Madison", Title = "CTO"}
       };
 
       return Json(employees, JsonRequestBehavior.AllowGet);
