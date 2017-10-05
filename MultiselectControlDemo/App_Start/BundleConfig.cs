@@ -10,7 +10,8 @@ namespace MultiselectControlDemo
     {
       bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                   "~/Scripts/jquery-{version}.js",
-                  "~/Scripts/jquery.multi-select.js"));
+                  "~/Scripts/jquery.multi-select.js",
+                  "~/Scripts/jquery.quicksearch.js"));
 
       bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                   "~/Scripts/jquery.validate*"));
