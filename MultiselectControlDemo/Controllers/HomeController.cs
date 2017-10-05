@@ -32,16 +32,16 @@ namespace MultiselectControlDemo.Controllers
     {
       var employees = new List<Employee>()
       {
-        new Employee() {FirstName = "George", LastName = "Washington", Title = "President"},
-        new Employee() {FirstName = "Thomas", LastName = "Jefferson", Title = "CEO"},
-        new Employee() {FirstName = "Abraham", LastName = "Lincoln", Title = "General Counsel"},
-        new Employee() {FirstName = "Franklin", LastName = "Roosevelt", Title = "Chairman"},
-        new Employee() {FirstName = "John", LastName = "Kennedy", Title = "COO"},
-        new Employee() {FirstName = "Richard", LastName = "Nixon", Title = "Chief Strategist"},
-        new Employee() {FirstName = "James", LastName = "Madison", Title = "CTO"}
+        new Employee() {Id = 1, FirstName = "George", LastName = "Washington"},
+        new Employee() {Id = 2, FirstName = "Thomas", LastName = "Jefferson"},
+        new Employee() {Id = 3, FirstName = "Abraham", LastName = "Lincoln"},
+        new Employee() {Id = 4, FirstName = "Franklin", LastName = "Roosevelt"},
+        new Employee() {Id = 5, FirstName = "John", LastName = "Kennedy"},
+        new Employee() {Id = 6, FirstName = "Richard", LastName = "Nixon"},
+        new Employee() {Id = 7, FirstName = "James", LastName = "Madison"}
       };
 
-      return Json(employees, JsonRequestBehavior.AllowGet);
+      return Json(employees.OrderBy(e => e.FirstName), JsonRequestBehavior.AllowGet);
     }
   }
 }

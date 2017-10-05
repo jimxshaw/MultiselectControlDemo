@@ -2,23 +2,19 @@
   ViewBag.Title = "Home Page";
 }
 
-<h2>Mult-select Control Sample</h2>
+<section>
+  <fieldset>
+    <legend>Select Employees</legend>
+    <div class="container">
+      <select multiple="multiple" id="my-select">
+        @* option tags are dynamically set with ajax in home.js *@
+      </select>
+      <a href="#" id="selectAll">Select all</a> /
+      <a href="#" id="removeAll">Remove all</a>
+    </div>
+  </fieldset>
+</section>
 
-<fieldset>
-  <legend>Select Employees</legend>
-  <div class="container">
-    <select multiple="multiple" id="my-select">
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-      <option value="6">Six</option>
-    </select>
-    <a href="#" id="selectAll">Select all</a> /
-    <a href="#" id="removeAll">Remove all</a>
-  </div>
-</fieldset>
 
 @section Scripts {
   @Scripts.Render("~/bundles/home")
